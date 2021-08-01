@@ -88,7 +88,7 @@ $cargo = $_POST["cargo"];
 $idioma = $_POST["idioma"];
 $periodo = $_POST["periodo"];
 
-mysqli_query($conexao,"insert into mangas.scans values('$nome','$email','$cargo','$idioma','$periodo')");
+mysqli_query($conexao,"insert into mangas.scans values('$email','$nome','$cargo','$idioma','$periodo')");
 mysqli_close($conexao);
 }
 ?>
