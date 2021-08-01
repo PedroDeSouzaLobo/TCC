@@ -29,7 +29,7 @@ E-mail: <input type=text name=email>
         <td><input type=radio name=cargo value=editor><font color="#FFFACD">Editor</td>
     </tr>
     <tr>
-        <td><input type=radio name=cargo value=revisador><font color="#FFFACD">revisadores</td>
+        <td><input type=radio name=cargo value=revisador><font color="#FFFACD">Revisadores</td>
     </tr>
     <tr>
         <td><input type=radio name=cargo value=RawH><font color="#FFFACD">Caçador de Raw</td>
@@ -88,7 +88,7 @@ $cargo = $_POST["cargo"];
 $idioma = $_POST["idioma"];
 $periodo = $_POST["periodo"];
 
-mysqli_query($conexao,"insert into mangas.scans values('$nome','email','$cargo','$idioma','$periodo')");
+mysqli_query($conexao,"insert into mangas.scans values('$nome','$email','$cargo','$idioma','$periodo')");
 mysqli_close($conexao);
 }
 ?>
